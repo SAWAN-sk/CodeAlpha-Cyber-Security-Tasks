@@ -23,6 +23,56 @@ This project is a network sniffer tool implemented in Python. It captures and an
    vi sniffer.py ##upload code in this file##
 python sniffer.py
 
+### Explanation
+TCP Packet:
+
+Time: Timestamp of the packet capture.
+Source IP: 192.168.1.2
+Destination IP: 192.168.1.1
+Protocol: 6 (TCP)
+Length: 74 bytes
+TTL: 64
+Flags: TCP flags (e.g., SYN, ACK, etc.)
+Fragment Offset: 0
+Source MAC: 00:14:22:01:23:45
+Destination MAC: 00:14:22:67:89
+TCP Source Port: 54321
+Destination Port: 80 (HTTP)
+Sequence Number: 123456789
+Acknowledgment Number: 987654321
+Flags: S (SYN)
+Payload: TCP payload (truncated in the sample)
+ICMP Packet:
+
+Time: Timestamp of the packet capture.
+Source IP: 192.168.1.1
+Destination IP: 192.168.1.2
+Protocol: 1 (ICMP)
+Length: 98 bytes
+TTL: 64
+Flags: None
+Fragment Offset: 0
+Source MAC: 00:14:22:67:89
+Destination MAC: 00:14:22:01:23:45
+ICMP Type: 0 (Echo Reply)
+Code: 0
+Payload: ICMP payload (truncated in the sample)
+UDP Packet:
+
+Time: Timestamp of the packet capture.
+Source IP: 192.168.1.2
+Destination IP: 192.168.1.3
+Protocol: 17 (UDP)
+Length: 60 bytes
+TTL: 64
+Flags: None
+Fragment Offset: 0
+Source MAC: 00:14:22:01:23:45
+Destination MAC: 00:14:22:67:89
+UDP Source Port: 12345
+Destination Port: 53 (DNS)
+Payload: DNS query response (truncated in the sample)
+
 ******Example Output**********
 
 Time: 1627834207.123456, Source IP: 192.168.1.2, Destination IP: 192.168.1.1, Protocol: 6, Length: 74
