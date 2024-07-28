@@ -24,8 +24,8 @@ This project is a network sniffer tool implemented in Python. It captures and an
 python sniffer.py
 
 ### Explanation
-TCP Packet:
 
+TCP Packet:
 Time: Timestamp of the packet capture.
 Source IP: 192.168.1.2
 Destination IP: 192.168.1.1
@@ -42,8 +42,8 @@ Sequence Number: 123456789
 Acknowledgment Number: 987654321
 Flags: S (SYN)
 Payload: TCP payload (truncated in the sample)
-ICMP Packet:
 
+ICMP Packet:
 Time: Timestamp of the packet capture.
 Source IP: 192.168.1.1
 Destination IP: 192.168.1.2
@@ -57,8 +57,8 @@ Destination MAC: 00:14:22:01:23:45
 ICMP Type: 0 (Echo Reply)
 Code: 0
 Payload: ICMP payload (truncated in the sample)
-UDP Packet:
 
+UDP Packet:
 Time: Timestamp of the packet capture.
 Source IP: 192.168.1.2
 Destination IP: 192.168.1.3
