@@ -20,6 +20,7 @@ This project is a network sniffer tool implemented in Python. It captures and an
 1. **Install the required dependencies:**
    ```bash
    pip install scapy
+   vi sniffer.py
 python sniffer.py
 
 ******Example Output**********
